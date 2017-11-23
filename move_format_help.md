@@ -9,7 +9,7 @@ Owner of SaveToDisk(WithLog) function needs read, write privileges on each datab
 <b>source filename:</b> Source filename. Star wildcard can be used. If empty, all uploaded files will be moved to Database directory defined before. 
 
 <b>regexp_pattern:</b> If empty, destination filename is equal to source name. 
-If not empty, source filename is equal to regexp_replace(source_filename, regexp_pattern, regexp_replace).
+If not empty, each source filename is change to regexp_replace(source_filename, regexp_pattern, regexp_replace) before move.
 
 <b>regexp_replace:</b> See previous line. Can be empty. See docs of regexp_replace built in function.
 
