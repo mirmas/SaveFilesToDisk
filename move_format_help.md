@@ -1,4 +1,4 @@
-<b>Format:<b><br/>
+<b>Format:</b><br/>
 database directory#source filename#regexp_pattern#regexp_replace#Overwrite old file(Y/N)#Binary or text move(B/T)#Charset#plsql block<br/>
 database directory#source filename#regexp_pattern#regexp_replace#Overwrite old file(Y/N)#Binary or text move(B/T)#Charset#plsql block<br/>
 ....<br/>
