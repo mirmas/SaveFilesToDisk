@@ -1,0 +1,31 @@
+{ 
+ "name": "SaveFilesToDisk", 
+ "version": "1.0", 
+ "description": "Saves files uploaded with File Browse item to disk", 
+ "keywords": ["Save file", "server disk", "APEX_APPLICATION_TEMP_FILES", "file browse"], 
+ "homepage": "https://github.com/mirmas/SaveFilesToDisk", 
+ "bugs": { 
+   "url": "https://github.com/mirmas/SaveFilesToDisk/issues", 
+   "email": "info@mirmas.si" 
+  }, 
+  "license": "MIT", 
+  "author": { 
+    "name": "Miro Masnoglav", 
+    "email": "info@mirmas.si", 
+    "url": "http://www.mirmas.si" 
+  }, 
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/mirmas/SaveFilesToDisk.git" 
+  }, 
+  "oracle": { 
+    "versions": ["11.2.0.1", "12.1.0.1"], 
+    "apex": { 
+      "versions": ["5.1.0"], 
+      "plugin": { 
+        "internalName": "SI.MIRMAS.SAVEFILESTODISK", 
+        "type": "process"
+      } 
+    } 
+  } 
+} 
