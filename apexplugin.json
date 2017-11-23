@@ -23,8 +23,9 @@
     "apex": { 
       "versions": ["5.1.0"], 
       "plugin": { 
-        "internalName": "SI.MIRMAS.SAVEFILESTODISK", 
-        "type": "process"
+        "internalName": "IS.MIRMAS.SAVEFILESTODISK", 
+        "type": "process",
+        "demo": "http://www.mirmas.si"
       } 
     } 
   } 
