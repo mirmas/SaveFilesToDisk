@@ -28,7 +28,7 @@ database directory#source filename#regexp_pattern#regexp_replace#Overwrite old f
 database directory#source filename#regexp_pattern#regexp_replace#Overwrite old file(Y/N)#Binary or text move(B/T)#Charset#plsqlblock</br>
 ....</br>
 User &lt;schema&gt; needs read, write privileges on each database directory. (e.g. grant READ, WRITE on directory "DIR" to &lt;schema&gt;);<br/> 
-See Move format plugin attribute help or move_format_help.txt for more info.
+See Move format plugin attribute help or move_format_help.md for more info.
 
 <b>Item with Filenames:</b> Select page item which will save filenames of uploaded files separated with colon. Usually you want to use this item value in process after SaveFilesToDisk process.
 
