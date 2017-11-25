@@ -13,10 +13,10 @@ whenever sqlerror exit sql.sqlcode rollback
 begin
 wwv_flow_api.import_begin (
  p_version_yyyy_mm_dd=>'2016.08.24'
-,p_release=>'5.1.1.00.08'
-,p_default_workspace_id=>2622738585713185
-,p_default_application_id=>112
-,p_default_owner=>'BK_APEX_MANUAL_CMS'
+,p_release=>'5.1.3.00.05'
+,p_default_workspace_id=>38413852719975596423
+,p_default_application_id=>60886
+,p_default_owner=>'ICJT'
 );
 end;
 /
@@ -28,13 +28,13 @@ end;
 prompt --application/shared_components/plugins/process_type/is_mirmas_savefilestodisk
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002609176027578397)
 ,p_plugin_type=>'PROCESS TYPE'
 ,p_name=>'IS.MIRMAS.SAVEFILESTODISK'
 ,p_display_name=>'SaveFilesToDisk'
 ,p_supported_ui_types=>'DESKTOP'
 ,p_api_version=>2
-,p_execution_function=>'#OWNER#.SaveToDiskWithLog'
+,p_execution_function=>'#OWNER#.SaveToDisk'
 ,p_substitute_attributes=>true
 ,p_subscribe_plugin_settings=>true
 ,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -65,8 +65,8 @@ wwv_flow_api.create_plugin(
 ,p_about_url=>'www.mirmas.si'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2868567262477312)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002609655287601339)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
@@ -78,8 +78,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Name of File Browse item (e.g. P1_UPLOAD) which holds uploaded files. Storage must be APEX_APPLICATION_TEMP_FILES table.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2868888278486294)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002609976303610321)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>2
 ,p_display_sequence=>20
@@ -92,22 +92,22 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Line break in text files after text move. Can be CR LF (Windows) or LF (Linux, MAC).'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2869170528490431)
-,p_plugin_attribute_id=>wwv_flow_api.id(2868888278486294)
+ p_id=>wwv_flow_api.id(37002610258553614458)
+,p_plugin_attribute_id=>wwv_flow_api.id(37002609976303610321)
 ,p_display_sequence=>10
 ,p_display_value=>'Windows (CR LF)'
 ,p_return_value=>'CR LF'
 );
 wwv_flow_api.create_plugin_attr_value(
- p_id=>wwv_flow_api.id(2869541913493467)
-,p_plugin_attribute_id=>wwv_flow_api.id(2868888278486294)
+ p_id=>wwv_flow_api.id(37002610629938617494)
+,p_plugin_attribute_id=>wwv_flow_api.id(37002609976303610321)
 ,p_display_sequence=>20
 ,p_display_value=>'Linux Mac (LF)'
 ,p_return_value=>'LF'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2870385537554644)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002611473562678671)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>3
 ,p_display_sequence=>30
@@ -120,8 +120,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Maximum allowed size in bytes. Abrreviations K,KB,M,MB,G,GB are allowed.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2870617712683637)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002611705737807664)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>4
 ,p_display_sequence=>40
@@ -172,8 +172,8 @@ wwv_flow_api.create_plugin_attribute(
 '<b>plsql block:</b> PLSQL block to execute after file move.'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2870900024697912)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002611988049821939)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>5
 ,p_display_sequence=>50
@@ -186,8 +186,8 @@ wwv_flow_api.create_plugin_attribute(
 'Usually you want to use this item value in process after SaveToDisk process.'))
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2871263128701629)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002612351153825656)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>6
 ,p_display_sequence=>60
@@ -198,8 +198,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_help_text=>'Select page item to store Hash value(s) of type RAW separated with colon. This is useful when you want to track file(s) changes.'
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(2887175138095158)
-,p_plugin_id=>wwv_flow_api.id(2868088002454370)
+ p_id=>wwv_flow_api.id(37002628263163219185)
+,p_plugin_id=>wwv_flow_api.id(37002609176027578397)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>7
 ,p_display_sequence=>70
