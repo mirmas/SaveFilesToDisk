@@ -42,6 +42,5 @@ For the rest you can left defaults.
   
 <b>SAMPLE APPLICATION</b>
 
-<b>Please note there is no demo at apex.oracle.com. Obvious reason is you need access to server file system to make the plugin works.</b><br/> 
-Install sample application f102.sql, change SaveToDiskMulti plugin process attribute "Move Format" to suit your configuration. You can change also "Destination Linebreak" and "Max Filesize" attributes. Similarly change SaveToDisk plugin process attribute Database directory and possibly "Filename" and "Max Filesize".
+Install sample application fSampleApp.sql, change SaveToDiskMulti plugin process attribute "Move Format" to suit your configuration. You can change also "Destination Linebreak" and "Max Filesize" attributes. Similarly change SaveToDisk plugin process attribute Database directory and possibly "Filename" and "Max Filesize".
 
