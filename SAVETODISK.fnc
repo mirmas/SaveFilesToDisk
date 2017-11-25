@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION BK_APEX_MANUAL_CMS.SaveToDisk(
+CREATE OR REPLACE FUNCTION SaveToDisk(
     p_process in apex_plugin.t_process,
     p_plugin  in apex_plugin.t_plugin )
     return apex_plugin.t_process_exec_result 
