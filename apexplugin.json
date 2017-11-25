@@ -25,7 +25,8 @@
       "plugin": { 
         "internalName": "IS.MIRMAS.SAVEFILESTODISK", 
         "type": "process",
-        "demo": "http://www.mirmas.si"
+        "demo": "https://apex.oracle.com/pls/apex/f?p=28694:1",
+        "previewImage": "https://raw.githubusercontent.com/mirmas/SaveFilesToDisk/master/SaveFilesToDisk.png"
       } 
     } 
   } 
